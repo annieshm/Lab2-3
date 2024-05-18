@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярність товару</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div>
+            <img src="LOGO.png" width="100px" height="auto">
+        </div>
+
+        <div class="navig">
+            <button onclick="window.location.href='index.html'">All</button>
+            <button onclick="window.location.href='index.html'">Man</button>
+            <button onclick="window.location.href='index.html'" >Girl</button>
+            <button onclick="openCartModal()">Cart</button>
+            <button id="gistogramButton" onclick="window.location.href='Graphic.html'">Graphic</button>
+        </div>
+    </div>
+    <canvas id="popularityChart"></canvas>
+
+</body>
+<script src='Graphic.js'></script>
+</html>

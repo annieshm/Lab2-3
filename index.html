@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div>
+            <img src="LOGO.png" width="100px" height="auto">
+        </div>
+
+        <div class="navig">
+            <button>All</button>
+            <button>Man</button>
+            <button>Girl</button>
+            <button onclick="openCartModal()">Cart</button>
+            <button id="gistogramButton" onclick="window.location.href='Graphic.html'">Graphic</button>
+        </div>
+    </div>
+    <div id="advertisement">
+        <div class="modal-content">
+            <h2 style="color:white">Advert</h2>
+            <p style="color:white">Content</p>
+            <button class="dismiss-button" onclick="closeAdvertisement()">Закрити</button>
+        </div>
+    </div>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h2>Корзина</h2>
+            <div id="cartContent"></div>
+            <div id="totalPrice" style="color:white;"></div>
+            <button onclick="clearCart()">Очистити корзину</button>
+            <button  class="close"  onclick="closeCartModal()"style="color:black; cursor: pointer;">Закрити корзину</button>
+        </div>
+    </div>
+
+    <div id="cardsContainer">
+    </div>
+    <script src='Cart.js'></script>
+    <script src='Reclama.js'></script>
+    <script src='Category.js'></script>
+</body>
+</html>
